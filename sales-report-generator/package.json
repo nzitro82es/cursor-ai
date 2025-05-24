@@ -1,0 +1,41 @@
+{
+  "name": "sales-report-generator",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate sales reports and calculate metrics",
+  "main": "dist/cli.js",
+  "bin": {
+    "sales-report": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "start": "ts-node src/cli.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "sales",
+    "reports",
+    "metrics",
+    "csv"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.5",
+    "@types/csv-stringify": "^1.4.3",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "commander": "^12.0.0",
+    "csv-parse": "^5.5.3",
+    "csv-stringify": "^6.5.2",
+    "csv-writer": "^1.6.0",
+    "date-fns": "^3.3.1"
+  }
+}
